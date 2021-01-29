@@ -16,14 +16,18 @@ Készítsetek egy Webshopot Angular keretrendszer segítségével.
 
 ## Csapatmunka
 - Válasszátok ki az oldal témáját (sícuccok, főzés, könyvek, filmek, stb...).
+
 1 {
 - Keressétek meg a hozzávalókat: képek, egyéb adatok.
 }
+
 - Egyenlő arányban osszátok el a feladatokat.
 - Minden komponensen csak egy ember dolgozzon.
+
 2 {
 - Beszéljétek meg a stílust.
 }
+
 - Osszátok ki, ki melyik feladatot végzi el: el kell készíteni az osztályokat, 
 majd három komponenst kell készíteni. Ez 4 jól elkülönülő faladat, időrendben.  
 3 {
