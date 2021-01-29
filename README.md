@@ -17,7 +17,7 @@ Készítsetek egy Webshopot Angular keretrendszer segítségével.
 ## Csapatmunka
 - Válasszátok ki az oldal témáját (sícuccok, főzés, könyvek, filmek, stb...).
 
-1 {
+1 ivbalazs: csinálom {
 - Keressétek meg a hozzávalókat: képek, egyéb adatok.
 
 }
