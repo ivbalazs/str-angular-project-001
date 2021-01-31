@@ -8,7 +8,7 @@ export class Product {
     stock: number = 0;
     featured: boolean = false;
     active: boolean = true;
-    discountPrice: number = 0;
+    discounted: boolean = false;
 
     constructor(properties?: Product) {
         if (properties) {
@@ -21,7 +21,7 @@ export class Product {
             this.stock = properties.stock || 0;
             this.featured = properties.featured || false;
             this.active = properties.active || true;
-            this.discountPrice = properties.discountPrice || 0;
+            this.discounted = properties.discounted || false;
         }
     }
 }
