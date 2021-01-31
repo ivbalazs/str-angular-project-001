@@ -11,7 +11,6 @@ import { ProductService } from 'src/app/service/product.service';
 export class Cat02Component implements OnInit {
 
   categoryProducts: Product[] = this.productService.randomFiveCategoryProducts(2);
-
   allCategoryProducts: Product[] = this.productService.allSameCategoryProducts(2);
   
   constructor(private productService: ProductService) { }
