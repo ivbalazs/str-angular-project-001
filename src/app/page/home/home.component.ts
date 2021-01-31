@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/model/product';
+import { ProductService } from 'src/app/service/product.service';
+
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  featuredProducts: Product[] = this.productService.randomFiveFeaturedProducts;
+  discountProducts: Product[] = this.productService.randomFiveDiscountProducts;
+  
+  constructor(private productService: ProductService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
 
 }
