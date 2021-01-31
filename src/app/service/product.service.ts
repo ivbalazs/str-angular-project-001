@@ -564,5 +564,23 @@ export class ProductService {
   ]
   
 
+  randomFiveFeaturedProducts: Product[] = this.list.filter( product => product.featured )
+    .sort( () => 0.5 - Math.random())
+    .slice(0, 5);
+
+
+  allCategoryProducts(catId: number): Product[] {
+      return this.list.filter(product => product.catId == catId);
+  }
+    
+
+  randomFiveCategoryProducts(catId: number): Product[] {
+      return this.allCategoryProducts(catId)
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 5);
+  }
+
+  
+
   constructor() { }
 }
