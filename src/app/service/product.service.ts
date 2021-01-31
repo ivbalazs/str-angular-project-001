@@ -18,7 +18,7 @@ export class ProductService {
       "stock": 29,
       "featured": true,
       "active": true,
-      "discountPrice": 3410
+      "discounted": true
     }, {
       "id": 2,
       "catId": 1,
@@ -29,7 +29,7 @@ export class ProductService {
       "stock": 75,
       "featured": false,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 3,
       "catId": 1,
@@ -40,7 +40,7 @@ export class ProductService {
       "stock": 21,
       "featured": true,
       "active": true,
-      "discountPrice": 1865
+      "discounted": true
     }, {
       "id": 4,
       "catId": 1,
@@ -51,7 +51,7 @@ export class ProductService {
       "stock": 26,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": true
     }, {
       "id": 5,
       "catId": 1,
@@ -62,7 +62,7 @@ export class ProductService {
       "stock": 9,
       "featured": true,
       "active": true,
-      "discountPrice": 1166
+      "discounted": true
     }, {
       "id": 6,
       "catId": 1,
@@ -73,7 +73,7 @@ export class ProductService {
       "stock": 13,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 7,
       "catId": 1,
@@ -84,7 +84,7 @@ export class ProductService {
       "stock": 89,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 8,
       "catId": 1,
@@ -95,7 +95,7 @@ export class ProductService {
       "stock": 7,
       "featured": true,
       "active": true,
-      "discountPrice": 2728
+      "discounted": true
     }, {
       "id": 9,
       "catId": 1,
@@ -106,7 +106,7 @@ export class ProductService {
       "stock": 1,
       "featured": false,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 10,
       "catId": 1,
@@ -117,7 +117,7 @@ export class ProductService {
       "stock": 85,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 11,
       "catId": 1,
@@ -128,7 +128,7 @@ export class ProductService {
       "stock": 13,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 12,
       "catId": 1,
@@ -139,7 +139,7 @@ export class ProductService {
       "stock": 13,
       "featured": false,
       "active": true,
-      "discountPrice": 2079
+      "discounted": true
     }, {
       "id": 13,
       "catId": 1,
@@ -150,7 +150,7 @@ export class ProductService {
       "stock": 47,
       "featured": false,
       "active": true,
-      "discountPrice": 6178
+      "discounted": true
     }, {
       "id": 14,
       "catId": 1,
@@ -161,7 +161,7 @@ export class ProductService {
       "stock": 54,
       "featured": false,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 15,
       "catId": 1,
@@ -172,7 +172,7 @@ export class ProductService {
       "stock": 50,
       "featured": false,
       "active": true,
-      "discountPrice": 5423
+      "discounted": true
     }, {
       "id": 16,
       "catId": 1,
@@ -183,7 +183,7 @@ export class ProductService {
       "stock": 15,
       "featured": true,
       "active": true,
-      "discountPrice": 3533
+      "discounted": true
     }, {
       "id": 17,
       "catId": 1,
@@ -194,7 +194,7 @@ export class ProductService {
       "stock": 49,
       "featured": false,
       "active": true,
-      "discountPrice": 7789
+      "discounted": true
     }, {
       "id": 18,
       "catId": 1,
@@ -205,7 +205,7 @@ export class ProductService {
       "stock": 53,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 19,
       "catId": 1,
@@ -216,7 +216,7 @@ export class ProductService {
       "stock": 46,
       "featured": false,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 20,
       "catId": 1,
@@ -227,7 +227,7 @@ export class ProductService {
       "stock": 32,
       "featured": true,
       "active": true,
-      "discountPrice": 1037
+      "discounted": true
     }, {
       "id": 21,
       "catId": 1,
@@ -238,7 +238,7 @@ export class ProductService {
       "stock": 44,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 22,
       "catId": 1,
@@ -249,7 +249,7 @@ export class ProductService {
       "stock": 82,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 23,
       "catId": 1,
@@ -260,7 +260,7 @@ export class ProductService {
       "stock": 79,
       "featured": true,
       "active": true,
-      "discountPrice": 3209
+      "discounted": true
     }, {
       "id": 24,
       "catId": 1,
@@ -271,7 +271,7 @@ export class ProductService {
       "stock": 90,
       "featured": true,
       "active": true,
-      "discountPrice": 6861
+      "discounted": true
     }, {
       "id": 25,
       "catId": 1,
@@ -282,7 +282,7 @@ export class ProductService {
       "stock": 66,
       "featured": false,
       "active": true,
-      "discountPrice": 7936
+      "discounted": true
     }, {
       "id": 26,
       "catId": 2,
@@ -293,7 +293,7 @@ export class ProductService {
       "stock": 71,
       "featured": false,
       "active": true,
-      "discountPrice": 1612
+      "discounted": true
     }, {
       "id": 27,
       "catId": 2,
@@ -304,7 +304,7 @@ export class ProductService {
       "stock": 54,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 28,
       "catId": 2,
@@ -315,7 +315,7 @@ export class ProductService {
       "stock": 10,
       "featured": true,
       "active": true,
-      "discountPrice": 5528
+      "discounted": true
     }, {
       "id": 29,
       "catId": 2,
@@ -326,7 +326,7 @@ export class ProductService {
       "stock": 98,
       "featured": false,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 30,
       "catId": 2,
@@ -337,7 +337,7 @@ export class ProductService {
       "stock": 7,
       "featured": true,
       "active": null,
-      "discountPrice": 1255
+      "discounted": true
     }, {
       "id": 31,
       "catId": 2,
@@ -348,7 +348,7 @@ export class ProductService {
       "stock": 10,
       "featured": true,
       "active": true,
-      "discountPrice": 4258
+      "discounted": true
     }, {
       "id": 32,
       "catId": 2,
@@ -359,7 +359,7 @@ export class ProductService {
       "stock": 11,
       "featured": true,
       "active": true,
-      "discountPrice": 1065
+      "discounted": true
     }, {
       "id": 33,
       "catId": 2,
@@ -370,7 +370,7 @@ export class ProductService {
       "stock": 72,
       "featured": false,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 34,
       "catId": 2,
@@ -381,7 +381,7 @@ export class ProductService {
       "stock": 16,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 35,
       "catId": 2,
@@ -392,7 +392,7 @@ export class ProductService {
       "stock": 79,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 36,
       "catId": 2,
@@ -403,7 +403,7 @@ export class ProductService {
       "stock": 27,
       "featured": false,
       "active": true,
-      "discountPrice": 3055
+      "discounted": true
     }, {
       "id": 37,
       "catId": 2,
@@ -414,7 +414,7 @@ export class ProductService {
       "stock": 49,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 38,
       "catId": 2,
@@ -425,7 +425,7 @@ export class ProductService {
       "stock": 64,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 39,
       "catId": 2,
@@ -436,7 +436,7 @@ export class ProductService {
       "stock": 68,
       "featured": true,
       "active": true,
-      "discountPrice": 1216
+      "discounted": true
     }, {
       "id": 40,
       "catId": 2,
@@ -447,7 +447,7 @@ export class ProductService {
       "stock": 45,
       "featured": false,
       "active": true,
-      "discountPrice": 3854
+      "discounted": true
     }, {
       "id": 41,
       "catId": 2,
@@ -458,7 +458,7 @@ export class ProductService {
       "stock": 1,
       "featured": true,
       "active": true,
-      "discountPrice": 4051
+      "discounted": true
     }, {
       "id": 42,
       "catId": 2,
@@ -469,7 +469,7 @@ export class ProductService {
       "stock": 16,
       "featured": false,
       "active": true,
-      "discountPrice": 7550
+      "discounted": true
     }, {
       "id": 43,
       "catId": 2,
@@ -480,7 +480,7 @@ export class ProductService {
       "stock": 14,
       "featured": false,
       "active": true,
-      "discountPrice": 4608
+      "discounted": true
     }, {
       "id": 44,
       "catId": 2,
@@ -491,7 +491,7 @@ export class ProductService {
       "stock": 45,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 45,
       "catId": 2,
@@ -502,7 +502,7 @@ export class ProductService {
       "stock": 97,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 46,
       "catId": 2,
@@ -513,7 +513,7 @@ export class ProductService {
       "stock": 60,
       "featured": true,
       "active": true,
-      "discountPrice": 4417
+      "discounted": true
     }, {
       "id": 47,
       "catId": 2,
@@ -524,7 +524,7 @@ export class ProductService {
       "stock": 93,
       "featured": false,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 48,
       "catId": 2,
@@ -535,7 +535,7 @@ export class ProductService {
       "stock": 41,
       "featured": true,
       "active": true,
-      "discountPrice": 0
+      "discounted": false
     }, {
       "id": 49,
       "catId": 2,
@@ -546,7 +546,7 @@ export class ProductService {
       "stock": 11,
       "featured": true,
       "active": true,
-      "discountPrice": 2528
+      "discounted": true
     }, {
       "id": 50,
       "catId": 2,
@@ -557,11 +557,38 @@ export class ProductService {
       "stock": 40,
       "featured": false,
       "active": true,
-      "discountPrice": 6141
+      "discounted": true
     }
 
 
   ]
+  
+
+  randomFiveFeaturedProducts: Product[] = this.list.filter( product => product.featured )
+    .sort( () => 0.5 - Math.random())
+    .slice(0, 5);
+
+  randomFiveDiscountProducts: Product[] = this.list.filter( product => product.discounted === true )
+    .sort( () => 0.5 - Math.random())
+    .slice(0, 5);
+
+
+  allSameCategoryProducts(catId: number): Product[] {
+      return this.list.filter(product => ( product.catId == catId ));
+  }
+    
+
+  allCategoryFeaturedProducts(catId: number): Product[] {
+      return this.list.filter(product => ( product.catId == catId && product.featured === true ));
+  }
+    
+
+  randomFiveCategoryProducts(catId: number): Product[] {
+      return this.allCategoryFeaturedProducts(catId)
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 5);
+  }
+
   
 
   constructor() { }
