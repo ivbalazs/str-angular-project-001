@@ -8,8 +8,10 @@ import { Cat01Component } from './page/cat01/cat01.component';
 import { Cat02Component } from './page/cat02/cat02.component';
 import { HomeComponent } from './page/home/home.component';
 import { ProductPagerComponent } from './common/product-pager/product-pager.component';
+
 import { ProductCardComponent } from './common/product-card/product-card.component';
 import { FilterPipe } from './pipe/filter.pipe';
+
 
 @NgModule({
   declarations: [
@@ -19,8 +21,10 @@ import { FilterPipe } from './pipe/filter.pipe';
     Cat02Component,
     HomeComponent,
     ProductPagerComponent,
+
     ProductCardComponent,
     FilterPipe
+
   ],
   imports: [
     BrowserModule,
