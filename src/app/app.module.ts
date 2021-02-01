@@ -13,6 +13,7 @@ import { ProductCardComponent } from './common/product-card/product-card.compone
 import { FilterPipe } from './pipe/filter.pipe';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
