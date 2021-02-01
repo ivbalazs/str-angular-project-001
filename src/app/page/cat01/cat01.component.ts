@@ -9,8 +9,7 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class Cat01Component implements OnInit {
 
-  categoryProducts: Product[] = this.productService.randomFiveCategoryProducts(1);
-  
+  categoryProducts: Product[] = this.productService.randomFiveCategoryProducts(1);  
   allCategoryProducts: Product[] = this.productService.allSameCategoryProducts(1);
   
   constructor(private productService: ProductService) { }
