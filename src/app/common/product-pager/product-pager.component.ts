@@ -10,6 +10,7 @@ export class ProductPagerComponent implements OnInit {
 
   @Input() products: Product[];
   
+ 
   constructor() { }
 
   ngOnInit(): void {
