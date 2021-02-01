@@ -10,6 +10,7 @@ import { HomeComponent } from './page/home/home.component';
 import { ProductPagerComponent } from './common/product-pager/product-pager.component';
 import { ProductCardComponent } from './common/product-card/product-card.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,7 @@ import { ProductCardComponent } from './common/product-card/product-card.compone
     Cat02Component,
     HomeComponent,
     ProductPagerComponent,
-    ProductCardComponent
+    ProductCardComponent,
   ],
   imports: [
     BrowserModule,
