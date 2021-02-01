@@ -14,7 +14,8 @@ export class Cat01Component implements OnInit {
   
   constructor(private productService: ProductService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
+  
+  
 
 }
