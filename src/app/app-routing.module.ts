@@ -18,10 +18,6 @@ const routes: Routes = [
     path: 'cat02',
     component: Cat02Component,
   },
-  // {
-  //   path: '**',
-  //   component: HomeComponent,
-  // },
   {
     path: 'admin',
     component: AdminComponent,
