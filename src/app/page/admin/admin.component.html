@@ -1,1 +1,25 @@
-<p>admin works!</p>
+<h3 class="mb-4">Termék adatok szerkesztése</h3>
+
+<form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0"
+      type="submit">Search</button>
+</form>
+
+<div class="container">
+    <div class="row">
+      <div class="col-8">
+        <app-product-list 
+          [products]="products"
+          (selectClick)="selectButtonClick($event)"
+          (updateClick)="onUpdateButtonClick($event)"
+          (deleteClick)="onDeleteButtonClick($event)">
+        </app-product-list>
+      </div>
+      <div class="col-4">
+        <app-product-card 
+          [product]="products">
+        </app-product-card>
+      </div>
+    </div>
+  </div>

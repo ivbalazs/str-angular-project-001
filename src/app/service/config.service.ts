@@ -17,7 +17,7 @@ export class ConfigService {
     {text: 'Home', link: '/', icon: 'home'},
     {text: 'Kategória>Utazás', link: '/cat01'},
     {text: 'Kategória>Számítástechnika', link: '/cat02'},
-    {text: 'Admin', link: '/admin'},
+    {text: 'Admin', link: '/admin'}
   ];
 
   constructor() { }
