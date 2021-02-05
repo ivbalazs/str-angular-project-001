@@ -589,5 +589,29 @@ export class ProductService {
         .slice(0, 5);
   }
 
-  constructor() { }
+  get pList(): Product[] {
+    return this.list;
+  }
+
+  constructor() {
+    if (localStorage.productList) {
+      this.list = JSON.parse(localStorage.productList);
+    }
+  }
+
+  updateProduct(product: Product): void {
+    const index = this.pList.findIndex(item => item.id === product.id);
+    this.pList.splice(index, 1, product);
+    this.updateLocalStorage();
+  }
+
+  removeProduct(product: Product): void {
+    const index = this.pList.findIndex(item => item.id === product.id);
+    this.pList.splice(index, 1);
+    this.updateLocalStorage();
+  }
+
+  updateLocalStorage(): void {
+    localStorage.productList = JSON.stringify(this.pList);
+  }
 }

@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +12,14 @@ import { ProductPagerComponent } from './common/product-pager/product-pager.comp
 
 import { ProductCardComponent } from './common/product-card/product-card.component';
 import { FilterPipe } from './pipe/filter.pipe';
+import { AdminComponent } from './page/admin/admin.component';
+import { DataEditorComponent } from './common/data-editor/data-editor.component';
+import { IconComponent } from './common/icon/icon.component';
+import { ActionButtonComponent } from './common/action-button/action-button.component';
+import { ActionButtonGroupComponent } from './common/action-button-group/action-button-group.component';
+import { DataCellComponent } from './common/data-cell/data-cell.component';
+import { DataRowComponent } from './common/data-row/data-row.component';
+import { ProductListComponent } from './common/product-list/product-list.component';
 
 
 
@@ -24,10 +33,20 @@ import { FilterPipe } from './pipe/filter.pipe';
     ProductPagerComponent,
 
     ProductCardComponent,
-    FilterPipe
+    FilterPipe,
+    AdminComponent,
+    DataEditorComponent,
+    IconComponent,
+    ActionButtonComponent,
+    ActionButtonGroupComponent,
+    DataCellComponent,
+    DataRowComponent,
+    ProductListComponent
 
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule
   ],
