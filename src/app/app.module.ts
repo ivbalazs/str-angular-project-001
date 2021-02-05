@@ -11,6 +11,7 @@ import { ProductPagerComponent } from './common/product-pager/product-pager.comp
 
 import { ProductCardComponent } from './common/product-card/product-card.component';
 import { FilterPipe } from './pipe/filter.pipe';
+import { AdminComponent } from './page/admin/admin.component';
 
 
 
@@ -24,7 +25,8 @@ import { FilterPipe } from './pipe/filter.pipe';
     ProductPagerComponent,
 
     ProductCardComponent,
-    FilterPipe
+    FilterPipe,
+    AdminComponent
 
   ],
   imports: [
