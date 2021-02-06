@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-// import { Observable } from 'rxjs';
-// import { Product } from 'src/app/model/product';
+import { Observable } from 'rxjs';
+import { Product } from 'src/app/model/product';
+import { ConfigService } from 'src/app/service/config.service';
 // import { ConfigService } from 'src/app/service/config.service';
 // import { ITableCol } from 'src/app/service/config.service';
-// import { ProductService } from 'src/app/service/product.service';
+import { ProductService } from 'src/app/service/product.service';
+
 
 @Component({
   selector: 'app-admin',
@@ -11,6 +13,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin.component.scss']
 })
 export class AdminComponent implements OnInit {
+  productList$: Observable<Product[]> = this.productService.getAll();
+  phrase: string = '';
 
   // productList$: Observable<Product[]> = this.productService.getAll();
   // cols: ITableCol[] = this.config.tableCols;
@@ -20,23 +24,28 @@ export class AdminComponent implements OnInit {
   //currentProduct: Product = new Product();
 
   constructor(
-    // private config: ConfigService,
-    // private productService: ProductService
+    private config: ConfigService,
+    private productService: ProductService
   ) { }
 
   ngOnInit(): void { }
 
-  // onUpdate(product: Product): void {
-  //   this.productService.update(product).subscribe(
-  //     updatedProduct => console.log(updatedProduct)
-  //   );
-  // }
+  onChangePhrase(event: Event): void {
+    this.phrase = (event.target as HTMLInputElement).value;
+  }
 
-  // onDelete(product: Product): void {
-  //   this.productService.remove(product).subscribe(
-  //     () => console.log('deleted')
-  //   );
-  // }
+
+  onUpdate(product: Product): void {
+    this.productService.update(product).subscribe(
+      updatedProduct => console.log(updatedProduct)
+    );
+  }
+
+  onDelete(product: Product): void {
+    this.productService.remove(product).subscribe(
+      () => console.log('deleted')
+    );
+  }
 
 }
   

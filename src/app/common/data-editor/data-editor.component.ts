@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from 'src/app/model/product';
 import { ConfigService } from 'src/app/service/config.service';
@@ -12,8 +12,13 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class DataEditorComponent implements OnInit {
 
-  productList$: Observable<Product[]> = this.productService.getAll();
+  //productList$: Observable<Product[]> = this.productService.getAll();
   cols: ITableCol[] = this.config.tableCols;
+  
+  @Input() productList$: Observable<Product[]>;
+  @Input() phrase: string = '';
+  @Output() updateClick: EventEmitter<Product> = new EventEmitter();
+  @Output() deleteClick: EventEmitter<Product> = new EventEmitter();
 
   // @Input() products: Product[] = [];
   // @Output() selectClick: EventEmitter<Product> = new EventEmitter();
