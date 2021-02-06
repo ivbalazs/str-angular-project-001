@@ -1,25 +1,13 @@
 {
   "products": [
     {
-      "id": 5,
-      "catId": 1,
-      "name": "Quisque ut erat.",
-      "description": "In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh.",
-      "image": "../../assets/img/5.jpg",
-      "price": 1634,
-      "stock": 9,
-      "featured": true,
-      "active": true,
-      "discounted": true
-    },
-    {
       "id": 6,
       "catId": 1,
       "name": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.",
       "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus.",
       "image": "../../assets/img/6.jpg",
       "price": 9387,
-      "stock": 13,
+      "stock": "133",
       "featured": true,
       "active": true,
       "discounted": false

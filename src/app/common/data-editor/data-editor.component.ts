@@ -1,5 +1,9 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Product } from 'src/app/model/product';
+import { ConfigService } from 'src/app/service/config.service';
+import { ITableCol } from 'src/app/service/config.service';
+import { ProductService } from 'src/app/service/product.service';
 
 @Component({
   selector: 'app-data-editor',
@@ -8,25 +12,44 @@ import { Product } from 'src/app/model/product';
 })
 export class DataEditorComponent implements OnInit {
 
-  @Input() products: Product[] = [];
-  @Output() selectClick: EventEmitter<Product> = new EventEmitter();
-  @Output() updateClick: EventEmitter<Product> = new EventEmitter();
-  @Output() deleteClick: EventEmitter<Product> = new EventEmitter();
+  productList$: Observable<Product[]> = this.productService.getAll();
+  cols: ITableCol[] = this.config.tableCols;
 
-  constructor() { }
+  // @Input() products: Product[] = [];
+  // @Output() selectClick: EventEmitter<Product> = new EventEmitter();
+  // @Output() updateClick: EventEmitter<Product> = new EventEmitter();
+  // @Output() deleteClick: EventEmitter<Product> = new EventEmitter();
+
+  constructor(
+    private config: ConfigService,
+    private productService: ProductService
+  ) { }
 
   ngOnInit(): void {
   }
 
-  onSelectButtonClick(product: Product): void {
-    this.selectClick.emit(product);
+  onUpdate(product: Product): void {
+    this.productService.update(product).subscribe(
+      updatedProduct => console.log(updatedProduct)
+    );
   }
 
-  onUpdateButtonClick(product: Product): void {
-    this.updateClick.emit(product);
+  onDelete(product: Product): void {
+    this.productService.remove(product).subscribe(
+      () => console.log('deleted')
+    );
   }
 
-  onDeleteButtonClick(product: Product): void {
-    this.deleteClick.emit(product);
-  }
+  // onSelectButtonClick(product: Product): void {
+  //   this.selectClick.emit(product);
+  // }
+
+  // onUpdateButtonClick(product: Product): void {
+  //   this.updateClick.emit(product);
+  // }
+
+  // onDeleteButtonClick(product: Product): void {
+  //   this.deleteClick.emit(product);
+  // }
+
 }
