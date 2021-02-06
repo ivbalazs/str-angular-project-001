@@ -1,18 +1,6 @@
 {
   "products": [
     {
-      "id": 4,
-      "catId": 1,
-      "name": "Nulla nisl.",
-      "description": "Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo.",
-      "image": "../../assets/img/4.jpg",
-      "price": 6595,
-      "stock": 26,
-      "featured": true,
-      "active": true,
-      "discounted": true
-    },
-    {
       "id": 5,
       "catId": 1,
       "name": "Quisque ut erat.",
