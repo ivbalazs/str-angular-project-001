@@ -10,7 +10,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let product of productList$ | async">
+            <tr *ngFor="let product of productList$ | async | filter:phrase:'name'">
               <td *ngFor="let col of cols">
                 <input *ngIf="col.editable" [(ngModel)]="product[col.key]" type="text" class="form-control">
                 <span *ngIf="!col.editable">{{ product[col.key] }}</span>
