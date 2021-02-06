@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +10,18 @@ import { Cat01Component } from './page/cat01/cat01.component';
 import { Cat02Component } from './page/cat02/cat02.component';
 import { HomeComponent } from './page/home/home.component';
 import { ProductPagerComponent } from './common/product-pager/product-pager.component';
+
+import { ProductCardComponent } from './common/product-card/product-card.component';
+import { FilterPipe } from './pipe/filter.pipe';
+import { AdminComponent } from './page/admin/admin.component';
+import { DataEditorComponent } from './common/data-editor/data-editor.component';
+import { IconComponent } from './common/icon/icon.component';
+import { ActionButtonComponent } from './common/action-button/action-button.component';
+import { ActionButtonGroupComponent } from './common/action-button-group/action-button-group.component';
+import { DataCellComponent } from './common/data-cell/data-cell.component';
+import { DataRowComponent } from './common/data-row/data-row.component';
+import { ProductListComponent } from './common/product-list/product-list.component';
+
 
 
 @NgModule({
@@ -18,9 +32,24 @@ import { ProductPagerComponent } from './common/product-pager/product-pager.comp
     Cat02Component,
     HomeComponent,
     ProductPagerComponent,
+
+    ProductCardComponent,
+    FilterPipe,
+    AdminComponent,
+    DataEditorComponent,
+    IconComponent,
+    ActionButtonComponent,
+    ActionButtonGroupComponent,
+    DataCellComponent,
+    DataRowComponent,
+    ProductListComponent
+
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

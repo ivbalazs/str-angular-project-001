@@ -1,0 +1,62 @@
+
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th *ngFor="let col of cols">{{ col.text }}</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of productList$ | async | filter:phrase:'name'">
+              <td *ngFor="let col of cols">
+                <input *ngIf="col.editable" [(ngModel)]="product[col.key]" type="text" class="form-control">
+                <span *ngIf="!col.editable">{{ product[col.key] }}</span>
+              </td>
+              <td>
+                <div class="btn-group">
+                  <button (click)="onUpdate(product)" class="btn btn-info">
+                    <i class="fa fa-refresh"></i>
+                  </button>
+                  <button (click)="onDelete(product)" class="btn btn-danger">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+<!-- <div class="row">
+    <div class="col-12 mt-3 pt-1 pb-1 d-flex justify-content-around">
+        <span class="text-bold">id</span>
+        <span class="text-bold">catId</span>
+        <span class="text-bold">name</span>
+        <span class="text-bold">description</span>
+        <span class="text-bold">image</span>
+        <span class="text-bold">price</span>
+        <span class="text-bold">stock</span>
+        <span class="text-bold">featured</span>
+        <span class="text-bold">active</span>
+        <span class="text-bold">discounted</span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 mt-1 data-list-row">
+        <div *ngFor="let row of products">
+            <app-data-row [dataRow]="row" 
+                (selectClick)="onSelectButtonClick(row)"
+                (updateClick)="onUpdateButtonClick(row)" 
+                (deleteClick)="onDeleteButtonClick(row)">
+            </app-data-row>
+        </div>
+    </div>
+</div> -->

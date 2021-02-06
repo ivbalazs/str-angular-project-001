@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'str-angular-project001';
+
+ 
+
+  constructor(){}
+
+
 }
