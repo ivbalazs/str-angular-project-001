@@ -10,8 +10,8 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class HomeComponent implements OnInit {
 
-  featuredProducts: Product[] = this.productService.randomFiveFeaturedProducts;
-  discountProducts: Product[] = this.productService.randomFiveDiscountProducts;
+  // featuredProducts: Product[] = this.productService.randomFiveFeaturedProducts;
+  // discountProducts: Product[] = this.productService.randomFiveDiscountProducts;
   
   constructor(private productService: ProductService) { }
 
