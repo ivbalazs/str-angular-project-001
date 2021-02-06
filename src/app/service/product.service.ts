@@ -1,10 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../model/product';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
+
+  apiUrl: string = 'http://localhost:3000/products';
 
   list: Product[] = [
 
@@ -593,7 +597,8 @@ export class ProductService {
     return this.list;
   }
 
-  constructor() {
+  constructor(private http: HttpClient) {
+    
     if (localStorage.productList) {
       this.list = JSON.parse(localStorage.productList);
     }
@@ -614,4 +619,21 @@ export class ProductService {
   updateLocalStorage(): void {
     localStorage.productList = JSON.stringify(this.pList);
   }
+
+  getAll(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.apiUrl);
+  }
+
+  get(product: Product): Observable<Product> {
+    return this.http.get<Product>(`${this.apiUrl}/${product.id}`);
+  }
+
+  update(product: Product): Observable<Product> {
+    return this.http.patch<Product>(`${this.apiUrl}/${product.id}`, product);
+  }
+
+  remove(product: Product): Observable<Product> {
+    return this.http.delete<Product>(`${this.apiUrl}/${product.id}`);
+  }
+
 }
