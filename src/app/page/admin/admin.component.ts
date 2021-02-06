@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Product } from 'src/app/model/product';
+import { ConfigService } from 'src/app/service/config.service';
+import { ITableCol } from 'src/app/service/config.service';
 import { ProductService } from 'src/app/service/product.service';
 
 @Component({
@@ -9,23 +12,44 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class AdminComponent implements OnInit {
 
-  products: Product[] = this.productService.list;
+  productList$: Observable<Product[]> = this.productService.getAll();
+  cols: ITableCol[] = this.config.tableCols;
 
-  currentProduct: Product = new Product();
+  //products: Product[] = this.productService.list;
 
-  constructor(private productService: ProductService) { }
+  //currentProduct: Product = new Product();
+
+  constructor(
+    private config: ConfigService,
+    private productService: ProductService
+  ) { }
 
   ngOnInit(): void { }
 
-  selectButtonClick(product: Product): void {
-    this.currentProduct = product;
+  onUpdate(product: Product): void {
+    this.productService.update(product).subscribe(
+      updatedProduct => console.log(updatedProduct)
+    );
   }
 
-  onUpdateButtonClick(product: Product): void {
-    this.productService.updateProduct(product)
+  onDelete(product: Product): void {
+    this.productService.remove(product).subscribe(
+      () => console.log('deleted')
+    );
   }
-  
-  onDeleteButtonClick(product: Product): void {
-    this.productService.removeProduct(product);
-  }
+
 }
+  
+  
+  // selectButtonClick(product: Product): void {
+  //   this.currentProduct = product;
+  // }
+
+  // onUpdateButtonClick(product: Product): void {
+  //   this.productService.updateProduct(product)
+  // }
+  
+  // onDeleteButtonClick(product: Product): void {
+  //   this.productService.removeProduct(product);
+  // }
+//}
