@@ -12,18 +12,12 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class DataEditorComponent implements OnInit {
 
-  //productList$: Observable<Product[]> = this.productService.getAll();
   cols: ITableCol[] = this.config.tableCols;
-  
+
   @Input() productList$: Observable<Product[]>;
   @Input() phrase: string = '';
   @Output() updateClick: EventEmitter<Product> = new EventEmitter();
   @Output() deleteClick: EventEmitter<Product> = new EventEmitter();
-
-  // @Input() products: Product[] = [];
-  // @Output() selectClick: EventEmitter<Product> = new EventEmitter();
-  // @Output() updateClick: EventEmitter<Product> = new EventEmitter();
-  // @Output() deleteClick: EventEmitter<Product> = new EventEmitter();
 
   constructor(
     private config: ConfigService,
@@ -44,17 +38,5 @@ export class DataEditorComponent implements OnInit {
       () => console.log('deleted')
     );
   }
-
-  // onSelectButtonClick(product: Product): void {
-  //   this.selectClick.emit(product);
-  // }
-
-  // onUpdateButtonClick(product: Product): void {
-  //   this.updateClick.emit(product);
-  // }
-
-  // onDeleteButtonClick(product: Product): void {
-  //   this.deleteClick.emit(product);
-  // }
 
 }

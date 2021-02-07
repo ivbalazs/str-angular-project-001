@@ -6,8 +6,8 @@
       "name": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.",
       "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus.",
       "image": "../../assets/img/6.jpg",
-      "price": 9387,
-      "stock": "1331",
+      "price": "93871",
+      "stock": "13311",
       "featured": true,
       "active": true,
       "discounted": false
