@@ -2,77 +2,11 @@
 
 <div class="input mb-4">
   <form class="form-inline my-2 my-lg-0">
-      <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
 </div>
 
 <app-data-editor (updateClick)="onUpdate($event)" (deleteClick)="onDelete($event)" [phrase]="phrase"
   [productList$]="productList$">
 </app-data-editor>
-
-<!-- <div class="container">
-  <div class="row">
-    <div class="col-12">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th *ngFor="let col of cols">{{ col.text }}</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let product of productList$ | async">
-            <td *ngFor="let col of cols">
-              <input *ngIf="col.editable" [(ngModel)]="product[col.key]" type="text" class="form-control">
-              <span *ngIf="!col.editable">{{ product[col.key] }}</span>
-            </td>
-            <td>
-              <div class="btn-group">
-                <button (click)="onUpdate(product)" class="btn btn-info">
-                  <i class="fa fa-refresh"></i>
-                </button>
-                <button (click)="onDelete(product)" class="btn btn-danger">
-                  <i class="fa fa-trash"></i>
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
- -->
-<!-- 
-<pre>
-  {{productList$ | async | json}}
-</pre>
-
-<form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0"
-      type="submit">Search</button>
-</form>
-
-<div class="container">
-    <div class="row">
-      <div class="col-8">
-        <app-product-list 
-          [products]="products"
-          (selectClick)="selectButtonClick($event)"
-          (updateClick)="onUpdateButtonClick($event)"
-          (deleteClick)="onDeleteButtonClick($event)">
-        </app-product-list>
-      </div>
-      <div class="col-4">
-        <!-- <app-product-card 
-          [product]="products">
-        </app-product-card> -->
-        <!-- <app-action-button-group>
-          [product]="products">
-        </app-action-button-group> -->
-        
-      <!-- </div>
-    </div>
-  </div>   -->
