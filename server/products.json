@@ -1,6 +1,61 @@
 {
   "products": [
     {
+      "id": 1,
+      "catId": 1,
+      "name": "Pellentesque eget nunc.",
+      "description": "Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque.",
+      "image": "../../assets/img/1.jpg",
+      "price": 4112,
+      "stock": 29,
+      "featured": true,
+      "active": true,
+      "discounted": true
+    }, {
+      "id": 2,
+      "catId": 1,
+      "name": "In sagittis dui vel nisl.",
+      "description": "In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
+      "image": "../../assets/img/2.jpg",
+      "price": 6440,
+      "stock": 75,
+      "featured": false,
+      "active": true,
+      "discounted": false
+    }, {
+      "id": 3,
+      "catId": 1,
+      "name": "Nulla ac enim.",
+      "description": "Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim.",
+      "image": "../../assets/img/3.jpg",
+      "price": 2018,
+      "stock": 21,
+      "featured": true,
+      "active": true,
+      "discounted": true
+    }, {
+      "id": 4,
+      "catId": 1,
+      "name": "Nulla nisl.",
+      "description": "Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo.",
+      "image": "../../assets/img/4.jpg",
+      "price": 6595,
+      "stock": 26,
+      "featured": true,
+      "active": true,
+      "discounted": true
+    }, {
+      "id": 5,
+      "catId": 1,
+      "name": "Quisque ut erat.",
+      "description": "In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh.",
+      "image": "../../assets/img/5.jpg",
+      "price": 1634,
+      "stock": 9,
+      "featured": true,
+      "active": true,
+      "discounted": true
+    }, {
       "id": 6,
       "catId": 1,
       "name": "Vestibulum quam sapien",
