@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Product } from 'src/app/model/product';
 
 @Component({
@@ -8,9 +9,8 @@ import { Product } from 'src/app/model/product';
 })
 export class ProductPagerComponent implements OnInit {
 
-  @Input() products: Product[];
-  
- 
+  @Input() productList$: Observable<Product[]>;  
+
   constructor() { }
 
   ngOnInit(): void {
