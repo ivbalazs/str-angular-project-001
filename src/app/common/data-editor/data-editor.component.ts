@@ -24,7 +24,7 @@ export class DataEditorComponent implements OnInit {
   cols: ITableCol[] = this.config.tableCols;
   filterKey: string = 'name';
   filterKeys: string[] = Object.keys(new Product());
-  productsNum: number;
+  productsNum: number = 0;
   pageSize: number = 10;
   pageStart: number = 1;
   currentPage: number = 1;
