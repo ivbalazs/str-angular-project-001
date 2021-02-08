@@ -16,7 +16,7 @@ export class Cat02Component implements OnInit {
   // allCategoryProducts: Product[] = this.productService.allSameCategoryProducts(2);
   
   productList$: Observable<Product[]> = this.productService.getAll().pipe(
-    map( products => products.filter( product => product.catId === 2 && product.featured ) )
+    map( products => products.filter( product => product.catId === 2 && product.featured).sort(() => 0.5 - Math.random()).slice(0, 5))
   );
 
   productListAll$: Observable<Product[]> = this.productService.getAll().pipe(

@@ -10,6 +10,9 @@ import { Product } from 'src/app/model/product';
 export class ProductPagerComponent implements OnInit {
 
   @Input() productList$: Observable<Product[]>;  
+  @Input() productListAll$: Observable<Product[]>;  
+  @Input() productListFeatured$: Observable<Product[]>;  
+  @Input() productListDiscounted$: Observable<Product[]>;  
 
   constructor() { }
 
