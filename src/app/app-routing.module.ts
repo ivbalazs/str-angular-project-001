@@ -21,6 +21,10 @@ const routes: Routes = [
   {
     path: 'admin',
     component: AdminComponent,
+  },
+  {
+    path: '**',
+    component: HomeComponent,
   }
 ];
 
