@@ -1,11 +1,4 @@
-<h3 class="mb-4">Termék adatok szerkesztése</h3>
-
-<div class="input mb-4">
-  <form class="form-inline my-2 my-lg-0">
-    <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text" placeholder="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
-</div>
+<h3>Termék adatok szerkesztése</h3>
 
 <app-data-editor (updateClick)="onUpdate($event)" (deleteClick)="onDelete($event)" [phrase]="phrase"
   [productList$]="productList$">

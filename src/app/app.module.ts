@@ -16,6 +16,7 @@ import { FilterPipe } from './pipe/filter.pipe';
 import { AdminComponent } from './page/admin/admin.component';
 import { DataEditorComponent } from './common/data-editor/data-editor.component';
 import { ProductListComponent } from './common/product-list/product-list.component';
+import { RandomizePipe } from './pipe/randomize.pipe';
 
 
 
@@ -32,7 +33,8 @@ import { ProductListComponent } from './common/product-list/product-list.compone
     FilterPipe,
     AdminComponent,
     DataEditorComponent,
-    ProductListComponent
+    ProductListComponent,
+    RandomizePipe
 
   ],
   imports: [
