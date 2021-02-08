@@ -10,6 +10,10 @@ interface IPageBtn {
   page: number;
 }
 
+interface IPageBtn {
+  page: number;
+}
+
 @Component({
   selector: 'app-data-editor',
   templateUrl: './data-editor.component.html',
