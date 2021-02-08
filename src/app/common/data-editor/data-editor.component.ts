@@ -29,7 +29,7 @@ export class DataEditorComponent implements OnInit {
   @Output() updateClick: EventEmitter<Product> = new EventEmitter();
   @Output() deleteClick: EventEmitter<Product> = new EventEmitter();
   @Input() productList$: Observable<Product[]> = this.productService.getAll().pipe(
-    map( (products: Product[]) => products.filter( product => product.catID === 1 ) ),
+    map( (products: Product[]) => products.filter( product => product.catId === 1 ) ),
     tap( products => this.productsNum = products.length )
   );
 
