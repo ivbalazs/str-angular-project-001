@@ -5,6 +5,10 @@ import { ConfigService } from 'src/app/service/config.service';
 import { ITableCol } from 'src/app/service/config.service';
 import { ProductService } from 'src/app/service/product.service';
 
+interface IPageBtn {
+  page: number;
+}
+
 @Component({
   selector: 'app-data-editor',
   templateUrl: './data-editor.component.html',
