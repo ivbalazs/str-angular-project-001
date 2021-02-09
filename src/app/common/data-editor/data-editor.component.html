@@ -45,8 +45,8 @@
 
   <nav class="mt-4 d-flex justify-content-center">
     <ul class="pagination">
-      <li class="page-item">
-        <a class="page-link" href="#">
+      <li [class.disabled]="currentPage === 1" class="page-item">
+        <a (click)="onStepPage($event, -1)" class="page-link" href="#">
           <span>&laquo;</span>
         </a>
       </li>
@@ -56,13 +56,8 @@
         {{ btn.page }}
       </a>
       </li>
-      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">4</a></li>
-      <li class="page-item"><a class="page-link" href="#">5</a></li>
       <li class="page-item">
-        <a class="page-link" href="#">
+        <a (click)="onStepPage($event, 1)" class="page-link" href="#">
           <span>&raquo;</span>
         </a>
       </li>
