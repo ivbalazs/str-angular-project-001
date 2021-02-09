@@ -10,10 +10,6 @@ interface IPageBtn {
   page: number;
 }
 
-interface IPageBtn {
-  page: number;
-}
-
 @Component({
   selector: 'app-data-editor',
   templateUrl: './data-editor.component.html',
@@ -24,7 +20,7 @@ export class DataEditorComponent implements OnInit {
   cols: ITableCol[] = this.config.tableCols;
   filterKey: string = 'name';
   filterKeys: string[] = Object.keys(new Product());
-  productsNum: number = 0;
+  productsNum: number = 50;
   pageSize: number = 10;
   pageStart: number = 1;
   currentPage: number = 1;
@@ -38,7 +34,7 @@ export class DataEditorComponent implements OnInit {
   );
 
   get paginator(): IPageBtn[] {
-    const pages = [];
+    const pages: IPageBtn[] = [];
     for (let i = 0; i < this.productsNum / this.pageSize && pages.length < 10; i++) {
       const page = this.pageStart + i;
       pages.push({page});
@@ -77,6 +73,11 @@ export class DataEditorComponent implements OnInit {
     ev.preventDefault();
     this.currentPage = btn.page;
     this.pageStart = (btn.page - 5) < 1 ? 1 : (btn.page - 5);
-    console.log(btn);
+  }
+
+  onStepPage(ev: Event, step: number): void {
+    ev.preventDefault();
+    this.currentPage += step;
+    this.pageStart = (this.currentPage - 5) < 1 ? 1 : (this.currentPage - 5);
   }
 }
